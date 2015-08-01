@@ -1,0 +1,15 @@
+<ion-pane>
+    <div class="bar bar-header">
+          <h1 class="title" data-ng-click='home()'>PreviouslyOn</h1>
+          <button class="button" data-ng-click="fresh()"><p class="icon ion-ios-refresh"></p></button>
+          <button class="button" ui-sref="firenddemande"><p class="icon ion-android-people"></p></button>
+          <button class="button" ui-sref="addfrnd"><p class="icon ion-android-person-add"></p></button>
+          
+    </div>
+    <ion-content class="lol" zooming=true direction="y">
+        <p>{{ info }}</p>
+        <ul data-ng-repeat="frnd in amie">
+            <li class="item ion-ios-body" data-on-hold="hold(frnd.id)"> {{frnd.login}}</li>
+        </ul>
+    </ion-content>
+</ion-pane>

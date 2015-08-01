@@ -1,0 +1,26 @@
+<ion-pane>
+
+    <div class="bar bar-header">
+          <h1 class="title">PreviouslyOn</h1>
+          <button class="button" data-ng-click="fresh()"><p class="icon ion-ios-refresh"></p></button>
+          <button class="button" ui-sref="add"><p class="icon ion-android-add-circle">Rand</p></button>
+          <button class="button" ui-sref="add1"><p class="icon ion-android-add-circle"></p></button>
+
+    </div>
+
+    <ion-content class="lol" zooming=true direction="y">
+        <ul data-ng-repeat="serie in shows">
+            <li class="item ion-social-youtube-outline" data-on-hold="onHold(serie.id)"> {{serie.title}}</li>
+        </ul>
+    </ion-content>
+
+   <div class="tabs tabs-icon-only">
+        <a class="tab-item" ui-sref="frnd">
+            <i class="icon ion-person-stalker" ></i>
+        </a>
+        <a class="tab-item">
+            <i class="icon ion-android-walk" data-ng-click="logout()"></i>
+        </a>
+    </div>
+
+</ion-pane>

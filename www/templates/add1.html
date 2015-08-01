@@ -1,0 +1,18 @@
+<ion-pane>
+    <div>
+		<label class="item item-input">
+		    <span class="input-label">Search</span>
+		    <input type="text" data-ng-model="title">
+		</label>
+		<button class="my_footer button-block button button-dark" data-ng-click="recherche()">Rechercher</button>
+    	<p>{{ info }}</p>
+
+        <ul data-ng-repeat="serie in liste" zooming=true direction="y">
+            <li class="item ion-social-youtube-outline" data-on-hold="add1(serie.id)"> {{serie.title}}</li>
+        </ul>
+
+		<p data-on-hold="add(frnd.id)">{{ frnd.login }}</p>
+    </div>
+</ion-pane>
+
+

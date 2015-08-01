@@ -1,0 +1,12 @@
+<ion-pane>
+    <div class="bar bar-header">
+          <h1 class="title">PreviouslyOn</h1>
+    </div>
+    <ion-content class="lol" zooming=true direction="y">
+        <p>{{ info }}</p>
+        <ul data-ng-repeat="random in rand">
+            <li class="item ion-android-add" data-on-hold="add(random.id)"> {{random.title}}</li>
+        </ul>
+    </ion-content>
+
+</ion-pane>

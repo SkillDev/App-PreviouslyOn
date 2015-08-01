@@ -1,0 +1,27 @@
+<div class="bar bar-header bar-dark">
+    <h1 class="title ion-android-film"> PreviouslyOn</h1>
+</div>
+<div class="bar bar-subheader  ">
+    <h2 class="title ion-ios-person"> Connexion</h2>
+</div>
+
+<ion-pane>
+        <div>
+            <div class="list"> <!-- INSCRIPTION -->
+                <label class="item item-input">
+                    <span class="input-label">login</span>
+                    <input type="text" data-ng-model="login">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" data-ng-model="password">
+                </label>
+                <p class="my_erreur">{{erreur}}</p>
+            </div>
+            <p class="my_link" data-ng-click="mdp()">Mot de passe oublié ?</p>
+            <div class="bar bar-footer">
+                <button class="my_footer button-block button button-dark" data-ng-click="signIn()">Connexion</button>
+            </div>
+        </div>
+
+</ion-pane>
